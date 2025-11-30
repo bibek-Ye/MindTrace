@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run MindTrace",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "g++ src/*.cpp -Iinclude -o MindTrace.exe && start cmd /k MindTrace.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
